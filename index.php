@@ -4,7 +4,7 @@ echo "開始年を入力：";
 $start = trim(fgets(STDIN));
 
 echo "終了年を入力：";
-$end = trim(fgets(STDIN)); // これが抜けていた
+$end = trim(fgets(STDIN)); 
 
 // 数値チェック
 if (!is_numeric($start) || !is_numeric($end)) {
