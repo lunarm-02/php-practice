@@ -1,0 +1,28 @@
+body {
+  background: #000;
+  perspective: 1000px;
+  overflow: hidden;
+}
+.content {
+  position: relative;
+  transform-style: preserve-3d;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  animation: rotate 30s infinite linear;
+}
+.box {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: solid 3px #ffffff;
+  background: rgba(256, 256, 256, 0.5);
+  transform: rotateX(90deg);
+}
+@keyframes rotate {
+  0% {transform: rotateX(0deg) rotateY(0deg)}
+  33% {transform: rotateX(-20deg) rotateY(120deg)}
+  66% {transform: rotateX(20deg) rotateY(240deg)}
+  100% {transform: rotateX(0deg) rotateY(360deg)}
+}
