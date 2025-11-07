@@ -1,5 +1,5 @@
 <?php
-function getTriangleArea(float $base, float $height) : float {
+function getTriangleArea(float $base = 5, float $height = 1) : float {
     return $base * $height / 2;
 }
 ?>

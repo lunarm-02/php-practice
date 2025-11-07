@@ -9,8 +9,9 @@ $keys = ['十', '百', '千', '万', '億', '兆', '京', '京', '垓', '𥝱', 
 $data = ['那由他', '京', '垓', '億', '無量大数'];
 // 指定された単位で配列$dataをソート
 usort($data, function($a, $b) use ($keys) {
-    return array_serach($a, $keys) <=> array_search($b, $keys);
+    return array_search($a, $keys) <=> array_search($b, $keys);
 });
+
 print_r($data);
 // 結果：Array([0] => 億 [1] => 京 [2] => 垓 [3] => 那由他 [4] => 無量大数)
 ?>

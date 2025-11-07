@@ -2,7 +2,7 @@
 
 test();
 if (function_exists('getTriangleArea')) {
-    print 'getTriangleArea関数は定義済みです。';
+    print 'getTriangleArea関数は定義済みです。' . PHP_EOL;
 }
 
 $area = getTriangleArea(8, 10);
